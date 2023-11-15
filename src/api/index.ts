@@ -1,5 +1,5 @@
-const a = 1
+const a = '/path'
 
 export {
-    a as ta
+    a
 }
