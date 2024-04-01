@@ -1,0 +1,453 @@
+{
+    "padding": "auto",
+    "margin": 16,
+    "size": 1,
+    "color": "#025DF4",
+    "category10": [
+        "#025DF4",
+        "#DB6BCF",
+        "#2498D1",
+        "#BBBDE6",
+        "#4045B2",
+        "#21A97A",
+        "#FF745A",
+        "#007E99",
+        "#FFA8A8",
+        "#2391FF"
+    ],
+    "category20": [
+        "#025DF4",
+        "#DB6BCF",
+        "#2498D1",
+        "#BBBDE6",
+        "#4045B2",
+        "#21A97A",
+        "#FF745A",
+        "#007E99",
+        "#FFA8A8",
+        "#2391FF"
+    ],
+    "enter": {
+        "duration": 300,
+        "fill": "both",
+        "delay": 0
+    },
+    "update": {
+        "duration": 300,
+        "fill": "both",
+        "delay": 0
+    },
+    "exit": {
+        "duration": 300,
+        "fill": "both",
+        "delay": 0
+    },
+    "view": {
+        "viewFill": "transparent",
+        "plotFill": "transparent",
+        "mainFill": "transparent",
+        "contentFill": "transparent"
+    },
+    "line": {
+        "line": {
+            "fill": "",
+            "strokeOpacity": 1,
+            "lineWidth": 1,
+            "lineCap": "round"
+        }
+    },
+    "point": {
+        "point": {
+            "r": 3,
+            "fillOpacity": 0.95,
+            "lineWidth": 0
+        },
+        "hollow": {
+            "r": 3,
+            "strokeOpacity": 0.95,
+            "lineWidth": 1
+        },
+        "plus": {
+            "r": 3,
+            "strokeOpacity": 0.95,
+            "lineWidth": 3
+        },
+        "diamond": {
+            "r": 3,
+            "strokeOpacity": 0.95,
+            "lineWidth": 1
+        }
+    },
+    "interval": {
+        "rect": {
+            "fillOpacity": 0.95
+        },
+        "hollow": {
+            "fill": "",
+            "strokeOpacity": 1,
+            "lineWidth": 2
+        }
+    },
+    "area": {
+        "area": {
+            "fillOpacity": 0.85,
+            "lineWidth": 0
+        }
+    },
+    "polygon": {
+        "polygon": {
+            "fillOpacity": 0.95
+        }
+    },
+    "cell": {
+        "cell": {
+            "fillOpacity": 0.95
+        },
+        "hollow": {
+            "fill": "",
+            "strokeOpacity": 1,
+            "lineWidth": 2
+        }
+    },
+    "rect": {
+        "rect": {
+            "fillOpacity": 0.95
+        },
+        "hollow": {
+            "fill": "",
+            "strokeOpacity": 1,
+            "lineWidth": 2
+        }
+    },
+    "link": {
+        "link": {
+            "fill": "",
+            "strokeOpacity": 1
+        }
+    },
+    "vector": {
+        "vector": {
+            "fillOpacity": 1
+        }
+    },
+    "box": {
+        "box": {
+            "fillOpacity": 0.95,
+            "stroke": "#000",
+            "lineWidth": 1
+        }
+    },
+    "text": {
+        "text": {
+            "fill": "#1D2129",
+            "fontSize": 10,
+            "strokeWidth": 0,
+            "connectorStroke": "#888",
+            "connectorStrokeOpacity": 0.45,
+            "connectorLineWidth": 1,
+            "backgroundFill": "#888",
+            "backgroundFillOpacity": 0.15,
+            "backgroundPadding": [
+                2,
+                4
+            ],
+            "startMarkerSymbol": "circle",
+            "startMarkerSize": 4,
+            "endMarkerSymbol": "circle",
+            "endMarkerSize": 4
+        },
+        "badge": {
+            "fill": "#1D2129",
+            "fillOpacity": 0.65,
+            "strokeWidth": 0,
+            "fontSize": 10,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "markerFill": "#888",
+            "markerFillOpacity": 0.25,
+            "markerStrokeOpacity": 0
+        }
+    },
+    "lineX": {
+        "line": {
+            "stroke": "#888",
+            "strokeOpacity": 0.45,
+            "lineWidth": 1
+        }
+    },
+    "lineY": {
+        "line": {
+            "stroke": "#888",
+            "strokeOpacity": 0.45,
+            "lineWidth": 1
+        }
+    },
+    "rangeX": {
+        "range": {
+            "fill": "#888",
+            "fillOpacity": 0.15,
+            "lineWidth": 0
+        }
+    },
+    "rangeY": {
+        "range": {
+            "fill": "#888",
+            "fillOpacity": 0.15,
+            "lineWidth": 0
+        }
+    },
+    "connector": {
+        "connector": {
+            "stroke": "#888",
+            "strokeOpacity": 0.45,
+            "lineWidth": 1,
+            "connectLength1": 12,
+            "endMarker": true,
+            "endMarkerSize": 6,
+            "endMarkerFill": "#888",
+            "endMarkerFillOpacity": 0.95
+        }
+    },
+    "axis": {
+        "arrow": false,
+        "gridLineDash": [
+            0,
+            0
+        ],
+        "gridLineWidth": 1,
+        "gridStroke": "#ddd",
+        "gridStrokeOpacity": 1,
+        "labelAlign": "horizontal",
+        "labelFill": "#000",
+        "labelOpacity": 1,
+        "labelFontSize": 10,
+        "labelFontWeight": "normal",
+        "labelSpacing": 8,
+        "line": true,
+        "lineLineWidth": 1,
+        "lineStroke": "#888",
+        "lineStrokeOpacity": 1,
+        "tickLength": 5,
+        "tickLineWidth": 1,
+        "tickStroke": "#000",
+        "tickOpacity": 0.45,
+        "titleFill": "#000",
+        "titleOpacity": 1,
+        "titleFontSize": 11,
+        "titleFontWeight": "bold",
+        "titleSpacing": 12,
+        "titleTransformOrigin": "center",
+        "lineArrowOffset": 6,
+        "lineArrowSize": 6,
+        "labelStrokeOpacity": 1,
+        "tickStrokeOpacity": 1,
+        "titleStrokeOpacity": 1,
+        "titleFillOpacity": 1
+    },
+    "axisTop": {
+        "gridDirection": "positive",
+        "labelDirection": "negative",
+        "tickDirection": "negative",
+        "titlePosition": "top",
+        "titleSpacing": 12,
+        "labelSpacing": 4,
+        "titleTextBaseline": "middle"
+    },
+    "axisBottom": {
+        "gridDirection": "negative",
+        "labelDirection": "positive",
+        "tickDirection": "positive",
+        "titlePosition": "bottom",
+        "titleSpacing": 12,
+        "labelSpacing": 4,
+        "titleTextBaseline": "bottom"
+    },
+    "axisLeft": {
+        "gridDirection": "positive",
+        "labelDirection": "negative",
+        "labelSpacing": 4,
+        "tickDirection": "negative",
+        "titlePosition": "left",
+        "titleSpacing": 12,
+        "titleTextBaseline": "middle",
+        "titleDirection": "vertical",
+        "titleTransformOrigin": "center"
+    },
+    "axisRight": {
+        "gridDirection": "negative",
+        "labelDirection": "positive",
+        "labelSpacing": 4,
+        "tickDirection": "positive",
+        "titlePosition": "right",
+        "titleSpacing": 12,
+        "titleTextBaseline": "top",
+        "titleDirection": "vertical",
+        "titleTransformOrigin": "center"
+    },
+    "axisLinear": {
+        "girdClosed": true,
+        "gridConnect": "arc",
+        "gridDirection": "negative",
+        "gridType": "surround",
+        "titlePosition": "top",
+        "titleSpacing": 0
+    },
+    "axisArc": {
+        "title": false,
+        "titlePosition": "inner",
+        "line": false,
+        "tick": true,
+        "labelSpacing": 4
+    },
+    "axisRadar": {
+        "girdClosed": true,
+        "gridStrokeOpacity": 0.3,
+        "gridType": "surround",
+        "label": false,
+        "tick": false,
+        "titlePosition": "start"
+    },
+    "legendCategory": {
+        "backgroundFill": "transparent",
+        "itemBackgroundFill": "transparent",
+        "itemLabelFill": "#000",
+        "itemLabelFillOpacity": 1,
+        "itemLabelFontSize": 10,
+        "itemLabelFontWeight": "normal",
+        "itemMarkerFillOpacity": 1,
+        "itemMarkerSize": 8,
+        "itemSpacing": [
+            8,
+            8
+        ],
+        "itemValueFill": "#000",
+        "itemValueFillOpacity": 1,
+        "itemValueFontSize": 10,
+        "itemValueFontWeight": "normal",
+        "navButtonFill": "#000",
+        "navButtonFillOpacity": 0.65,
+        "navPageNumFill": "#000",
+        "navPageNumFillOpacity": 0.45,
+        "navPageNumFontSize": 12,
+        "padding": 8,
+        "title": false,
+        "titleFill": "#000",
+        "titleFillOpacity": 1,
+        "titleFontSize": 11,
+        "titleFontWeight": "bold",
+        "titleSpacing": 4,
+        "tickStroke": "#000",
+        "tickStrokeOpacity": 0.25,
+        "rowPadding": 8,
+        "colPadding": 12,
+        "maxRows": 3,
+        "maxCols": 3
+    },
+    "legendContinuous": {
+        "handleHeight": 12,
+        "handleLabelFill": "#000",
+        "handleLabelFillOpacity": 0.45,
+        "handleLabelFontSize": 10,
+        "handleLabelFontWeight": "normal",
+        "handleMarkerFill": "#000",
+        "handleMarkerFillOpacity": 0.6,
+        "handleMarkerLineWidth": 1,
+        "handleMarkerStroke": "#000",
+        "handleMarkerStrokeOpacity": 0.25,
+        "handleWidth": 10,
+        "labelFill": "#000",
+        "labelFillOpacity": 0.45,
+        "labelFontSize": 10,
+        "labelFontWeight": "normal",
+        "labelSpacing": 3,
+        "tick": true,
+        "tickLength": 12,
+        "ribbonSize": 12,
+        "ribbonFill": "#aaa",
+        "handle": true,
+        "handleLabel": false,
+        "handleShape": "slider",
+        "handleIconSize": 6.666666666666666,
+        "indicator": false,
+        "titleFontSize": 12,
+        "titleSpacing": 4,
+        "titleFontWeight": "normal",
+        "titleFillOpacity": 0.9,
+        "tickStroke": "#000",
+        "tickStrokeOpacity": 0.45
+    },
+    "label": {
+        "fill": "#000",
+        "fillOpacity": 0.65,
+        "fontSize": 10,
+        "fontWeight": "normal",
+        "offset": 12,
+        "connectorStroke": "#000",
+        "connectorStrokeOpacity": 0.45,
+        "connectorLineWidth": 1,
+        "connectorLength": 12,
+        "connectorLength2": 8,
+        "connectorDistance": 4
+    },
+    "innerLabel": {
+        "fill": "#fff",
+        "fontSize": 10,
+        "fillOpacity": 0.85,
+        "fontWeight": "normal",
+        "offset": 0
+    },
+    "htmlLabel": {
+        "fontSize": 10,
+        "opacity": 0.65,
+        "color": "#000",
+        "fontWeight": "normal"
+    },
+    "slider": {
+        "trackSize": 16,
+        "trackFill": "#888",
+        "trackFillOpacity": 0.05,
+        "selectionFill": "#4e79a7",
+        "selectionFillOpacity": 0.15,
+        "handleIconSize": 10,
+        "handleIconFill": "#f7f7f7",
+        "handleIconFillOpacity": 1,
+        "handleIconStroke": "#000",
+        "handleIconStrokeOpacity": 0.25,
+        "handleIconLineWidth": 1,
+        "handleIconRadius": 2,
+        "handleLabelFill": "#000",
+        "handleLabelFillOpacity": 0.45,
+        "handleLabelFontSize": 10,
+        "handleLabelFontWeight": "normal"
+    },
+    "scrollbar": {
+        "padding": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "trackSize": 6,
+        "isRound": true,
+        "slidable": true,
+        "scrollable": true,
+        "trackFill": "#e5e5e5",
+        "trackFillOpacity": 0,
+        "thumbFill": "#000",
+        "thumbFillOpacity": 0.15,
+        "thumbHighlightedFillOpacity": 0.2
+    },
+    "title": {
+        "spacing": 8,
+        "titleFill": "#000",
+        "titleFillOpacity": 0.9,
+        "titleFontSize": 16,
+        "titleFontWeight": "bold",
+        "titleTextBaseline": "top",
+        "subtitleFill": "#000",
+        "subtitleFillOpacity": 0.65,
+        "subtitleFontSize": 12,
+        "subtitleFontWeight": "normal",
+        "subtitleTextBaseline": "top"
+    }
+}
