@@ -4,6 +4,7 @@
 >
 import { ref } from 'vue';
 import Menu from './components/Menu.vue';
+import Tabs from './components/Tabs.vue';
 
 const selectedKeys = ref<string[]>(['1']);
 const collapsed = ref<boolean>(false);
@@ -33,9 +34,12 @@ const collapsed = ref<boolean>(false);
           class="trigger"
           @click="() => (collapsed = !collapsed)"
         />
+        <!-- <Menu mode="horizontal"></Menu> -->
       </a-layout-header>
       <a-layout-content>
-        Content
+        <Tabs></Tabs>
+
+        <router-view></router-view>
       </a-layout-content>
     </a-layout>
   </a-layout>

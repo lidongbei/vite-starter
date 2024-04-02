@@ -1,7 +1,18 @@
-<script setup>
-import { ref } from 'vue';
+<script lang="ts" setup>
+import { ref, defineProps, withDefaults, toRefs } from 'vue';
+import { Menu } from 'ant-design-vue'
+import type { MenuMode } from 'ant-design-vue'
 
-const collapsed = ref(false);
+
+const props = withDefaults(
+  defineProps<{
+    mode: MenuMode,
+  }>(),{
+    mode: 'inline'
+  })
+
+const { mode } = toRefs(props)
+
 const selectedKeys = ref(['1']);
 
 const theme = ref({
@@ -13,7 +24,7 @@ const theme = ref({
 </script>
 <template>
   <a-config-provider :theme="theme">
-    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
+    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" :mode="mode">
       <a-menu-item key="1">
         <pie-chart-outlined />
         <span>Option 1</span>
