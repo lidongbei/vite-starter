@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, defineProps, toRefs } from 'vue';
+import { onMounted, ref, toRefs } from 'vue';
 import { Chart } from '@antv/g2';
 
 const chartRef = ref();

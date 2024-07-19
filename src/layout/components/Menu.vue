@@ -1,15 +1,7 @@
-<script lang="ts" setup>
-import { ref, defineProps, withDefaults, toRefs } from 'vue';
-import { Menu } from 'ant-design-vue'
-import type { MenuMode } from 'ant-design-vue'
-
-
-const props = withDefaults(
-  defineProps<{
-    mode: MenuMode,
-  }>(),{
-    mode: 'inline'
-  })
+<script setup>
+const props = defineProps({
+  mode: { type: String, default: 'inline' }
+})
 
 const { mode } = toRefs(props)
 
@@ -23,42 +15,41 @@ const theme = ref({
 
 </script>
 <template>
-  <a-config-provider :theme="theme">
-    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" :mode="mode">
-      <a-menu-item key="1">
-        <pie-chart-outlined />
-        <span>Option 1</span>
-      </a-menu-item>
-      <a-menu-item key="2">
-        <desktop-outlined />
-        <span>Option 2</span>
-      </a-menu-item>
-      <a-sub-menu key="sub1">
-        <template #title>
-          <span>
-            <user-outlined />
-            <span>User</span>
-          </span>
-        </template>
-        <a-menu-item key="3">Tom</a-menu-item>
-        <a-menu-item key="4">Bill</a-menu-item>
-        <a-menu-item key="5">Alex</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub2">
-        <template #title>
-          <span>
-            <team-outlined />
-            <span>Team</span>
-          </span>
-        </template>
-        <a-menu-item key="6">Team 1</a-menu-item>
-        <a-menu-item key="8">Team 2</a-menu-item>
-      </a-sub-menu>
-      <a-menu-item key="9">
-        <file-outlined />
-        <span>File</span>
-      </a-menu-item>
-    </a-menu>
-  </a-config-provider>
+  <el-menu
+    default-active="2"
+    class="el-menu-vertical-demo"
+    :collapse="isCollapse"
+  >
+    <el-sub-menu index="1">
+      <template #title>
+        <el-icon><location /></el-icon>
+        <span>Navigator One</span>
+      </template>
+      <el-menu-item-group>
+        <template #title><span>Group One</span></template>
+        <el-menu-item index="1-1">item one</el-menu-item>
+        <el-menu-item index="1-2">item two</el-menu-item>
+      </el-menu-item-group>
+      <el-menu-item-group title="Group Two">
+        <el-menu-item index="1-3">item three</el-menu-item>
+      </el-menu-item-group>
+      <el-sub-menu index="1-4">
+        <template #title><span>item four</span></template>
+        <el-menu-item index="1-4-1">item one</el-menu-item>
+      </el-sub-menu>
+    </el-sub-menu>
+    <el-menu-item index="2">
+      <el-icon><icon-menu /></el-icon>
+      <template #title>Navigator Two</template>
+    </el-menu-item>
+    <el-menu-item index="3" disabled>
+      <el-icon><document /></el-icon>
+      <template #title>Navigator Three</template>
+    </el-menu-item>
+    <el-menu-item index="4">
+      <el-icon><setting /></el-icon>
+      <template #title>Navigator Four</template>
+    </el-menu-item>
+  </el-menu>
 </template>
 <style scoped></style>

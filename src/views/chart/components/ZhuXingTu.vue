@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, defineProps, toRefs } from 'vue';
+import { onMounted, ref, toRefs } from 'vue';
 import { Chart } from '@antv/g2';
 
 const props = defineProps({ config: Object })
@@ -26,7 +26,7 @@ const initChart = () => {
       // subtitle: 'world',
     })
     .interval()
-    
+
     .data({
       type: 'fetch',
       value: '/api/hdfs/read-csv?path=/output/hdfsJobByMonth/part-r-00000',
@@ -56,7 +56,7 @@ const initChart = () => {
     .encode('x', '年月')
     .encode('y', window.CONFIG.chartY)
     .encode('color', window.CONFIG.chartX)
-    
+
     // 横柱
     .coordinate({ transform: [{ type: 'transpose' }] })
     .encode('size', 20)
@@ -65,7 +65,7 @@ const initChart = () => {
     .style('radiusBottomRight', 10)
     .style('radiusBottomLeft', 10)
 
-    .axis('x', { 
+    .axis('x', {
         // labelFormatter: (val) => dayjs(val).format('M') + '月',
         title: null,
         autoRotate: true,
@@ -77,7 +77,7 @@ const initChart = () => {
     .interaction('tooltip', {
     })
 
-    
+
   chart.render();
   return chart;
 }

@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, defineProps, toRefs } from 'vue';
+import { onMounted, ref, toRefs } from 'vue';
 import { Chart } from '@antv/g2';
 
 const props = defineProps({ config: Object })
@@ -64,9 +64,9 @@ const initChart = () => {
         nice: true,
     })
     .axis('x', { title: null, line: true, tick: true })
-    .axis('y', { 
-      title: null, 
-      line: true, 
+    .axis('y', {
+      title: null,
+      line: true,
     })
 
     chart.line()
