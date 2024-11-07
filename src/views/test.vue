@@ -1,0 +1,3 @@
+<template>
+  hello test
+</template>
