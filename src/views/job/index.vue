@@ -109,6 +109,8 @@ const runJobs = () => {
     <a-flex gap="middle" vertical>
       <a-button type="primary" @click="doUpload">生成测试数据并上传</a-button>
       <a-button type="primary" danger @click="runJobs">运行计算任务</a-button>
+      <a-button type="primary" @click="doUpload">生成测试数据并上传</a-button>
+      <a-button type="primary" danger @click="runJobs">运行计算任务</a-button>
     </a-flex>
   </div>
 </template>
