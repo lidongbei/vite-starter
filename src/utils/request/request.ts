@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse, AxiosInstance } from 'axios'
+import axios, { AxiosRequestConfig, AxiosResponse, AxiosInstance, InternalAxiosRequestConfig } from 'axios'
 
 /**
  * 请求类
@@ -11,6 +11,13 @@ export class Request<R = any> {
     constructor(config: AxiosRequestConfig) {
         // 使用axios.create创建axios实例，配置为基础配置和我们传递进来的配置
         this.instance = axios.create(Object.assign(this.defaultConfig, config))
+
+        this.instance.interceptors.request.use((config: InternalAxiosRequestConfig) => {
+            // 处理请求前置
+            return config;
+        }, (err) => {
+
+        })
     }
 
     /**
@@ -85,7 +92,7 @@ export class Request<R = any> {
         url: string,
         params?: any,
         config?: AxiosRequestConfig
-    ) : Promise<AxiosResponse<Result<T>>> {
+    ) : Promise<AxiosResponse<R>> {
         let innerConfig: AxiosRequestConfig;
         if (config) {
             innerConfig = config
@@ -96,6 +103,7 @@ export class Request<R = any> {
         return this.instance.delete(url, innerConfig)
     }
 }
+
 
 /**
  * 基础响应信息结构
@@ -112,5 +120,5 @@ export type Result<T> = {
  * @returns 
  */
 export const createRequest = <T> (config: AxiosRequestConfig = {}) => {
-    return new Request<Result<T>>(config)
+    return new Request<T>(config)
 }
